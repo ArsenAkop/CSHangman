@@ -1,0 +1,11 @@
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/obj/Debug/netcoreapp2.0/HangMan.csprojResolveAssemblyReference.cache
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/obj/Debug/netcoreapp2.0/HangMan.csproj.CoreCompileInputs.cache
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/obj/Debug/netcoreapp2.0/HangMan.AssemblyInfoInputs.cache
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/obj/Debug/netcoreapp2.0/HangMan.AssemblyInfo.cs
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/bin/Debug/netcoreapp2.0/HangMan.deps.json
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/bin/Debug/netcoreapp2.0/HangMan.runtimeconfig.json
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/bin/Debug/netcoreapp2.0/HangMan.runtimeconfig.dev.json
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/bin/Debug/netcoreapp2.0/HangMan.dll
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/bin/Debug/netcoreapp2.0/HangMan.pdb
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/obj/Debug/netcoreapp2.0/HangMan.dll
+/Users/arsenakop/Desktop/C# Projects/HangMan/HangMan/obj/Debug/netcoreapp2.0/HangMan.pdb
