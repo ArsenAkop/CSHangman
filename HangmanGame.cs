@@ -6,18 +6,19 @@ namespace HangMan
     public class HangmanGame
     {
 
-        private bool _keepPlaying;
-        private int _guessesLeft;
-        private string _answer;
-        private int _lettersFound;
+        private bool _keepPlaying; //control variable while game is in session
+        private int _guessesLeft; //control variable holding number of guesses left
+        private string _answer; //variable holding the the answer 
+        private int _lettersFound; //variable holding number of letters found within answer
 
-        private string[] _guessedLetters;
-        private int _guessedLettersIndex;
+        private string[] _guessedLetters; //string array that holds all of the guessed letters
+        private int _guessedLettersIndex; //pointer for guessedLetters array
 
-        private string[] _wordDisplay;
+        private string[] _wordDisplay; //variable for empty (blank) dislay of the answer
         public void play()
         {
-            SetUp();
+
+            SetUp(); //set up boundaries for new game
 
             while(_keepPlaying)
             {
@@ -29,6 +30,7 @@ namespace HangMan
             DisplayResult();
         }
 
+        //input function for letter or word
         private void PromptUser()
         {
             bool validInput = false;
@@ -42,6 +44,7 @@ namespace HangMan
             Console.ReadLine();
         }
 
+        //function to check the validity of the input
         private bool ParseInput(string input)
         {
             if (input.Length > 1)
@@ -56,6 +59,8 @@ namespace HangMan
             }
             else
             {
+
+                //if the user inputs the same guessed letter twice or more times
                 if(_guessedLetters.Contains(input))
                 {
                     Console.WriteLine("You already guessed {0}", input);
@@ -118,12 +123,13 @@ namespace HangMan
             Console.WriteLine("\nPuzzle:  ");
             for (int i = 0; i < _wordDisplay.Length; i++)
             {
+                // write as many underscores as characters in the answer
                 Console.Write("{0} ", _wordDisplay[i]);
             }
             Console.WriteLine("\nYou have {0} guesses left.\n", _guessesLeft);
         }
 
-        private void SetUp()
+        private void SetUp() //sets up boundaries for new game
         {
             _guessesLeft = 5;
             _keepPlaying = true;
@@ -133,7 +139,7 @@ namespace HangMan
             CreateWordDisplay();
         }
 
-        private void CreateWordDisplay()
+        
         {
             _wordDisplay = new string[_answer.Length];
             for (int i = 0; i < _wordDisplay.Length; i++)
@@ -143,7 +149,7 @@ namespace HangMan
 
         }
 
-        private void GetWordFromPlayer()
+        private void GetWordFromPlayer() //user input for the 'answer'
         {
             Console.Write("Enter the word to guess (have the other person look away!): ");
             _answer = Console.ReadLine().ToUpper();
